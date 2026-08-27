@@ -5,57 +5,93 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>PTE 学术英语模考系统 · 下载</title>
 <style>
-  :root { --bg:#0f172a; --card:#1e293b; --accent:#2563eb; --text:#e2e8f0; --muted:#94a3b8; }
+  :root { --bg:#0f172a; --card:#1e293b; --accent:#2563eb; --accent2:#16a34a; --text:#e2e8f0; --muted:#94a3b8; }
   * { box-sizing:border-box; }
   body { margin:0; font-family:-apple-system,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif;
-         background:var(--bg); color:var(--text); display:flex; justify-content:center; padding:40px 16px; }
-  .wrap { width:100%; max-width:680px; }
-  .card { background:var(--card); border-radius:16px; padding:32px; box-shadow:0 10px 30px rgba(0,0,0,.35); }
+         background:var(--bg); color:var(--text); display:flex; justify-content:center; padding:40px 16px 80px; }
+  .wrap { width:100%; max-width:720px; }
+  .card { background:var(--card); border-radius:16px; padding:32px; box-shadow:0 10px 30px rgba(0,0,0,.35); margin-bottom:18px; }
   h1 { margin:0 0 4px; font-size:24px; }
-  .sub { color:var(--muted); margin:0 0 24px; font-size:14px; }
-  .dl { display:inline-block; background:var(--accent); color:#fff; text-decoration:none;
-        padding:14px 28px; border-radius:10px; font-weight:600; font-size:16px; }
+  .sub { color:var(--muted); margin:0 0 20px; font-size:14px; }
+  .dl { display:inline-block; color:#fff; text-decoration:none; padding:13px 22px; border-radius:10px; font-weight:600; font-size:15px; margin:6px 8px 6px 0; }
   .dl:hover { filter:brightness(1.08); }
-  .meta { margin-top:18px; font-size:13px; color:var(--muted); line-height:1.7; }
+  .github { background:#334155; }
+  .pan { background:var(--accent); }
+  .direct { background:#0891b2; }
+  .meta { margin-top:16px; font-size:13px; color:var(--muted); line-height:1.7; }
   code { background:#0b1220; padding:2px 6px; border-radius:4px; color:#7dd3fc; word-break:break-all; }
-  .steps { margin-top:28px; }
-  .steps h2 { font-size:16px; margin:0 0 10px; }
+  .steps h2, .act h2 { font-size:16px; margin:0 0 10px; }
   ol { margin:0; padding-left:20px; line-height:1.9; font-size:14px; }
-  .foot { margin-top:26px; font-size:12px; color:var(--muted); border-top:1px solid #334155; padding-top:14px; }
+  .act { background:#172554; border:1px solid #1e3a8a; }
+  .act li { margin:6px 0; }
+  .foot { margin-top:8px; font-size:12px; color:var(--muted); border-top:1px solid #334155; padding-top:14px; }
   a.link { color:#7dd3fc; }
+  .note { font-size:12px; color:var(--muted); margin-top:8px; }
+  /* floating WeChat widget */
+  .fab { position:fixed; right:18px; bottom:18px; z-index:50; }
+  .fab-btn { background:var(--accent2); color:#fff; border:none; border-radius:50px; padding:14px 18px; font-weight:700; cursor:pointer; box-shadow:0 6px 18px rgba(0,0,0,.4); }
+  .fab-panel { display:none; position:fixed; right:18px; bottom:74px; width:260px; background:var(--card); border:1px solid #334155; border-radius:14px; padding:16px; z-index:50; box-shadow:0 10px 30px rgba(0,0,0,.5); }
+  .fab-panel.show { display:block; }
+  .fab-panel h3 { margin:0 0 8px; font-size:15px; }
+  .fab-panel p { margin:6px 0; font-size:13px; color:var(--text); }
+  .fab-panel .wx { color:#7dd3fc; font-weight:700; }
 </style>
 </head>
 <body>
   <div class="wrap">
     <div class="card">
       <h1>PTE 学术英语模考系统</h1>
-      <p class="sub">版本 1.0.0 · Windows 10/11（64 位）</p>
+      <p class="sub">版本 1.0.0 · Windows 10/11（64 位）· ¥6.6 永久激活 · 离线可用 · AI 口语写作批改</p>
 
-      <a class="dl" href="https://github.com/sunav66/pte-exam-system/releases/latest/download/PTE_Exam_Setup_1.0.0.exe">⬇ 下载安装包（约 170 MB）</a>
+      <a class="dl pan" href="https://pan.baidu.com/s/REPLACE_WITH_YOUR_LINK" target="_blank">⬇ 百度网盘下载（推荐，单文件）</a>
+      <a class="dl github" href="https://github.com/sunav66/pte-exam-system/releases/tag/v1.0.0" target="_blank">GitHub 发布页（分卷）</a>
+      <a class="dl direct" href="https://REPLACE_WITH_YOUR_DIRECT_LINK/PTE_Exam_Setup_1.0.0.exe">直链下载</a>
+      <div class="note">百度网盘 / 直链为单个安装包，下载后直接安装即可；GitHub 为 12 个分卷 + <code>assemble.ps1</code>，需运行脚本合并成安装包。</div>
 
       <div class="meta">
-        文件：<code>PTE_Exam_Setup_1.0.0.exe</code><br/>
-        SHA256：<code>C7ABD66FBEE9F55B47F671A861DFCA8CF7EA6AE0049FC6FEF11A650F1F05AD7F</code><br/>
-        下载后请核对校验和，确保文件未被篡改。
-      </div>
-
-      <div class="steps">
-        <h2>安装与使用</h2>
-        <ol>
-          <li><b>以管理员身份运行</b>安装包（需写入 C:\Program Files）。</li>
-          <li>按向导安装，可创建桌面快捷方式。</li>
-          <li>打开即进入<b> 24 小时免费试用</b>，无需激活即可使用。</li>
-          <li>试用到期后，打开软件内的「激活」页面，扫码或输入<b>激活码</b>即可永久激活。</li>
-          <li>获取激活码：联系客服微信 <code>wxid_34mm5tyy8l5t12</code>（¥9.9 / 永久激活）。</li>
-          <li>卸载：开始菜单 → 「卸载 PTE 考试系统」；可选择同时删除本地做题与激活数据。</li>
-        </ol>
-      </div>
-
-      <div class="foot">
-        支持与激活服务：<a class="link" href="https://pte.openopen.com">pte.openopen.com</a><br/>
-        本软件为单机考试模考工具，激活状态与激活服务器绑定。
+        付款后由卖家发送<b>激活码</b>或<b>激活码生成器</b>下载链接（见右下角微信）。<br/>
+        客服微信：<code>wxid_34mm5tyy8l5t12</code> · 价格：<code>¥6.6 / 永久激活</code>
       </div>
     </div>
+
+    <div class="card steps">
+      <h2>安装与使用</h2>
+      <ol>
+        <li><b>以管理员身份运行</b>安装包（需写入 C:\Program Files）。</li>
+        <li>按向导安装，可创建桌面快捷方式。</li>
+        <li>打开即进入<b> 24 小时免费试用</b>，无需激活即可使用。</li>
+        <li>试用到期后，打开软件内「激活」页面，输入<b>激活码</b>（或由生成器小程序生成）即可永久激活。</li>
+        <li>获取激活码 / 生成器：付款后联系客服微信 <code>wxid_34mm5tyy8l5t12</code>。</li>
+        <li>卸载：开始菜单 → 「卸载 PTE 考试系统」；可选择同时删除本地做题与激活数据。</li>
+      </ol>
+    </div>
+
+    <div class="card act">
+      <h2>🎁 老带新 / 晒分活动（帮你免费拿码）</h2>
+      <ol>
+        <li><b>老带新送码</b>：把本页或海报转发到朋友圈 / 备考群，截图发客服微信，免费领 1 个激活码。</li>
+        <li><b>晒分返现</b>：出分截图发小红书并 @ 我们，返 ¥3~6 或送码。</li>
+        <li><b>资料包裂变</b>：转发领取「PTE 最新机经包」，自动引流到微信，再转化激活。</li>
+        <li><b>代理/机构</b>：可批量拿码自行转售，微信详谈。</li>
+      </ol>
+      <div class="note">激活码由卖家后台生成发放，成本为零，欢迎多分享多拿。</div>
+    </div>
+
+    <div class="foot">
+      支持与激活服务：<a class="link" href="https://pte.openopen.com">pte.openopen.com</a><br/>
+      本软件为单机考试模考工具，激活状态与激活服务器绑定。
+    </div>
+  </div>
+
+  <div class="fab">
+    <button class="fab-btn" onclick="document.getElementById('wx').classList.toggle('show')">💬 微信付款/加群</button>
+  </div>
+  <div class="fab-panel" id="wx">
+    <h3>联系客服（付款 ¥6.6）</h3>
+    <p>客服微信：<span class="wx">wxid_34mm5tyy8l5t12</span></p>
+    <p>付款后发送：<b>激活码</b> 或 <b>激活码生成器</b> 下载链接。</p>
+    <p>加备考群 / 代理洽谈：同上微信。</p>
+    <p class="note">（付款二维码见软件内「激活」页，或向客服索取）</p>
   </div>
 </body>
 </html>
