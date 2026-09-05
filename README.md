@@ -1,3 +1,12 @@
+
+## 💰 下载 / 购买（¥6.6 永久激活 · 24h 免费试用）
+
+- 🌐 落地页: **https://sunav66.github.io/pte-exam-system/**（购买流程 / FAQ / 出分墙）
+- 📦 安装包: [Release v1.0.0](https://github.com/sunav66/pte-exam-system/releases/tag/v1.0.0)（12 分卷 + ssemble.ps1 一键合并）
+- 🔑 激活: 付款后联系客服微信 wxid_34mm5tyy8l5t12（激活码 / 生成器二选一）
+- 🎁 老带新送码 / 晒分返现 / 代理合作：详见落地页
+
+---
 # PTE 学术英语模考系统 · 用户使用说明
 
 ## 下载与安装
